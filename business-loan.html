@@ -78,7 +78,7 @@
                     <a class="nav-link" href="personal-loan.html">Personal Loans</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Private Equity</a>
+                    <a class="nav-link" href="private-equity.html">Private Equity</a>
                   </li>
                 </ul>
               </li>
@@ -143,13 +143,13 @@
     <div class="others-option-for-responsive">
       <!-- Container -->
       <div class="container">
-        <div class="dot-menu">
+        <!-- <div class="dot-menu">
           <div class="inner">
             <div class="circle circle-one"></div>
             <div class="circle circle-two"></div>
             <div class="circle circle-three"></div>
           </div>
-        </div>
+        </div> -->
         <!-- Container -->
         <div class="container">
           <div class="option-inner">
@@ -178,77 +178,883 @@
 
 
 
-    <!-- Hero -->
-  <div class="hero-1 oh pos-rel" style="background: url('images/hero/banner-bg.png')">
-    <!-- container -->
-    <div class="container">
-      <!-- row -->
-      <div class="row align-items-center">
-        <!-- col -->
-        <div class="col-lg-5">
-          <div class="hero-1-content wow fadeInLeft animated">
-            <!-- <h5 class="cate wow fadeInUp animated" data-wow-delay="0.2s">
-                #Bank Loan
-              </h5> -->
-            <h1 class="title wow fadeInUp animated" data-wow-delay="0.4s">
-              Business Loan
-            </h1>
-            <h4>Best Business Loan with low interest rates provider</h4>
-            <!-- <p class="wow fadeInUp animated" data-wow-delay="0.6s">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p> -->
-            <div class="hero-1-button-group">
-  <a href="#loan-popup" class="btn theme-btn-1 wow fadeInUp animated" data-wow-delay="0.8s" style="width: 40%;">
-    Apply <i class="uil uil-angle-right-b ml-2 mb-2"></i>
-  </a>
+<!-- Hero Section -->
+<div class="hero-1 oh pos-rel" style="background: url('images/hero/banner-bg.png') center/cover no-repeat;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Hero Left Content -->
+      <div class="col-lg-5">
+        <div class="hero-1-content wow fadeInLeft animated">
+          <h1 class="title wow fadeInUp animated" data-wow-delay="0.4s">
+            Business Loan
+          </h1>
+          <h4>Best Business Loan with low interest rates provider</h4>
+
+          <!-- Apply Button -->
+          <div class="hero-1-button-group">
+            <a href="#business-loan-popup" class="btn theme-btn-1 wow fadeInUp animated" data-wow-delay="0.8s" style="width: 40%;">
+              Apply <i class="uil uil-angle-right-b ml-2 mb-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right Image -->
+      <div class="col-lg-7 d-lg-block">
+        <div class="hero-1-thumb-15 wow fadeInUp animated" data-wow-delay="0.4s">
+          <img class="img-fluid wow fadeInRight animated" src="images/banner/business-banner1.jpg" alt="Business Loan Banner" />
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <!-- Popup Modal -->
-<div id="loan-popup" class="popup-overlay">
-  <div class="popup">
-    <a href="#" class="close-btn">&times;</a>
+<div id="business-loan-popup" class="loan-popup-overlay">
+  <div class="loan-popup-box">
+    <a href="#" class="loan-close-btn">&times;</a>
 
-    <form class="loan-form">
-      <h2>Apply For Business Loan</h2>
+    <form class="business-loan-form">
+      <h3 class="loan-title">Apply For Business Loan</h3>
 
-      <div class="input-group">
-        <div class="icon">👤</div>
+      <div class="loan-input-group">
+        <div class="loan-icon">👤</div>
         <input type="text" placeholder="Full Name" required>
       </div>
 
-      <div class="input-group">
-        <div class="icon">+91</div>
+      <div class="loan-input-group">
+        <div class="loan-icon">+91</div>
         <input type="tel" placeholder="Mobile Number" required>
       </div>
 
-      <div class="input-group">
-        <div class="icon">📍</div>
+      <div class="loan-input-group">
+        <div class="loan-icon">📍</div>
         <input type="text" placeholder="City" required>
       </div>
 
-      <div class="input-group">
-        <div class="icon">₹</div>
+      <div class="loan-input-group">
+        <div class="loan-icon">₹</div>
         <input type="number" placeholder="Monthly Income" required>
       </div>
 
-      <div class="input-group">
-        <div class="icon">₹</div>
+      <div class="loan-input-group">
+        <div class="loan-icon">₹</div>
         <input type="number" placeholder="Loan Amount" required>
       </div>
 
-      <div class="checkbox">
+      <div class="loan-checkbox">
         <input type="checkbox" required>
         <label>I authorize Apnarupee and its partners to contact me. This overrides my number being in the NDNC registry.</label>
       </div>
 
-      <button type="submit" class="btn">Apply</button>
+      <button type="submit" class="loan-btn">Apply</button>
     </form>
   </div>
 </div>
 
+
+
 <style>
-/* Popup Overlay */
-.popup-overlay {
+  /* Full Page Centering using wrapper */
+  .page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eaf2fc;
+    padding: 15px;
+  }
+  /* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .page-wrapper {
+    min-height: 65vh; /* slightly taller for tablet */
+    padding: 20px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 767px) {
+  .page-wrapper {
+    flex-direction: column; /* stack items vertically */
+    justify-content: flex-start; /* align items from top */
+    min-height: 65vh; /* full screen height */
+    padding: 15px 10px;
+  }
+}
+
+  /* Container */
+  .form-container {
+    display: flex;
+    flex-direction: column; /* Always stack on mobile */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px; /* Mobile-friendly max width */
+    padding: 20px;
+  }
+  
+
+  /* Right Form Section */
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .form-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #333;
+  }
+
+  /* Input group styling */
+  .input-group {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    border: 2px solid #efefef;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .input-group:focus-within {
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0,160,227,0.5);
+  }
+
+  .input-group span {
+    background: #00a0e3;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 35px;
+  }
+
+  .input-group input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 0.95rem;
+  }
+
+  /* Checkbox container */
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 5px 0;
+  }
+
+  /* Submit Button */
+  .submit-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to bottom, #024a78, #0086c9);
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background: linear-gradient(to bottom, #06639d, #0292da);
+  }
+
+  /* Extra Small Screens (≤400px) */
+  @media (max-width: 400px) {
+    .form-section h2 {
+      font-size: 1.2rem;
+    }
+    .input-group input {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+    .checkbox-container {
+      font-size: 0.75rem;
+    }
+    .submit-btn {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+</style>
+
+<div class="page-wrapper">
+  <div class="form-container">
+    <div class="form-section">
+      <h2>Apply For Business Loan</h2>
+
+      <div class="input-group">
+        <span>👤</span>
+        <input type="text" placeholder="Full Name" required>
+      </div>
+
+      <div class="input-group">
+        <span>+91</span>
+        <input type="tel" placeholder="Mobile Number" required>
+      </div>
+
+      <div class="input-group">
+        <span>📍</span>
+        <input type="text" placeholder="City" required>
+      </div>
+
+      <div class="input-group">
+        <span>₹</span>
+        <input type="number" placeholder="Monthly Income" required>
+      </div>
+
+      <div class="input-group">
+        <span>₹</span>
+        <input type="number" placeholder="Loan Amount" required>
+      </div>
+
+      <div class="checkbox-container">
+        <input type="checkbox" required>
+        <label>I authorize Apnarupee and its partners to contact me. This overrides my number being in the NDNC registry.</label>
+      </div>
+
+      <button class="submit-btn">Apply</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Loan Info Section -->
+<!-- Redesigned Loan Info Section -->
+<section class="loan-section">
+  <div class="loan-container">
+    <!-- Vertical Tabs -->
+    <div class="loan-tabs">
+      <a href="index.html" class="loan-tab active">🏠 Home Loan</a>
+      <a href="loan-against-property.html" class="loan-tab">🏡 Loan Against Property</a>
+      <a href="business-loan.html" class="loan-tab">🏢 Business Loan</a>
+      <a href="personal-loan.html" class="loan-tab">👤 Personal Loan</a>
+      <a href="#" class="loan-tab">🏅 Gold Loan</a>
+    </div>
+
+    <!-- Loan Content -->
+    <div class="loan-content">
+      <h2 class="loan-title">Business Loan</h2>
+      <p>A business loan is a type of financial assistance designed for individuals or businesses who want to start, expand, or purchase equipment for their ventures.
+      </p>
+      <p>Entrepreneurs seeking capital to launch their startup or scale their operations often rely on business loans as a convenient funding option.
+      </p>
+      <p>These loans are especially well-suited for small businesses in India, offering them the financial support they need to grow and thrive.
+      </p>
+
+      <!-- <p><strong>Types of Small Business Loans in India:</strong></p>
+
+      <div class="loan-card">
+        <h3>1️⃣ Secured Business Loans</h3>
+        <p><strong>Secured business loans</strong> are loans taken against a personal guarantee or valuable asset used as collateral.</p>
+        <p>Examples include <strong>inventory loans, equipment loans, and term loans.</strong></p>
+        <p>In this type of loan, the borrower pledges assets such as land, machinery, or property as security for the loan amount.</p>
+        <p>The biggest advantage of secured business loans is that they typically come with a lower rate of interest, since the lender’s risk is reduced.</p>
+      </div>
+
+      <div class="loan-card">
+        <h3>2️⃣ Unsecured Business Loans</h3>
+        <p><strong>Unsecured business loans</strong> are loans provided without requiring any collateral from the borrower</p>
+      </div> -->
+
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* ---------- Section ---------- */
+.loan-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- Container Layout ---------- */
+.loan-container {
+  display: flex;
+  gap: 25px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Vertical Tabs ---------- */
+.loan-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 220px;
+  background: #f6f8fb;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.03);
+}
+
+.loan-tab {
+  display: block;
+  padding: 12px 15px;
+  font-weight: 600;
+  color: #0077b6;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: #fff;
+  text-align: left;
+}
+
+.loan-tab:hover {
+  background: #e3f2fd;
+  color: #023e8a;
+}
+
+.loan-tab.active {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 119, 182, 0.3);
+}
+
+/* ---------- Loan Content ---------- */
+.loan-content {
+  flex: 1;
+  min-width: 280px;
+  color: #333;
+}
+
+.loan-title {
+  font-size: 2rem;
+  color: #023e8a;
+  margin-bottom: 15px;
+}
+
+/* ---------- Cards ---------- */
+.loan-card {
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loan-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.loan-card h3 {
+  margin-bottom: 8px;
+  color: #03045e;
+}
+
+.loan-card.benefits ul {
+  padding-left: 20px;
+}
+
+.loan-card.benefits li {
+  margin: 5px 0;
+  color: #0077b6;
+  font-weight: 500;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  .loan-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .loan-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    min-width: 100%;
+    padding: 10px;
+    gap: 8px;
+    background: #f6f8fb;
+    border-radius: 10px;
+  }
+
+  .loan-tab {
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
+</style>
+
+
+
+<!-- Redesigned Loan Info Section -->
+<section class="loan-section">
+
+
+  <div class="loan-details">
+
+          <div class="loan-card">
+        <h5>Types of Small Business Loans in India:</h5>
+        <!-- <p><strong>Unsecured business loans</strong> are loans provided without requiring any collateral from the borrower</p> -->
+      </div>
+
+          <h3 class="loan-subtitle">1. Secured Business Loans</h3>
+    
+    <p class="loan-desc"><strong>Secured business loans</strong> are loans taken against a personal guarantee or valuable asset used as collateral.</p>
+
+    <p class="loan-desc">Examples include<strong> inventory loans, equipment loans, and term loans.</strong></p>
+
+    <p class="loan-desc">In this type of loan, the borrower pledges assets such as land, machinery, or property as security for the loan amount.</p>
+
+    <p class="loan-desc">The biggest advantage of secured business loans is that they typically come with a lower rate of interest, since the lender’s risk is reduced.</p>
+
+
+    <h3 class="loan-subtitle">2. Unsecured Business Loans</h3>
+    
+    <p class="loan-desc"><strong>Unsecured business loans</strong> are loans provided without requiring any collateral from the borrower.</p>
+
+      <div class="loan-card benefits">
+        <h5>✨ Benefits of Business Loan</h5>
+        <ul>
+          <li>✅ Flexible Tenures</li>
+          <li>✅ Quick Approval</li>
+          <li>✅ Competitive Interest Rates</li>
+        </ul>
+      </div>
+
+
+          <div class="loan-card">
+        <h5>Factors that affect interest rates for a small business loan in India:</h5>
+        <!-- <p><strong>Unsecured business loans</strong> are loans provided without requiring any collateral from the borrower</p> -->
+      </div>
+
+    <h3 class="loan-subtitle">1. Credit score:</h3>
+    
+    <p class="loan-desc">
+    A credit score is a three-digit number, typically ranging from 300 to 900, that reflects your creditworthiness to lenders.
+    </p>
+
+    <p class="loan-desc">Banks and financial institutions use this score to evaluate your reliability as a borrower. A high credit score can help you secure business loans at lower interest rates.</p>
+
+    <p class="loan-desc">Generally, a credit score of 750 and above is considered good by most lenders. Conversely, a low credit score may lead lenders to view you as a higher-risk borrower, resulting in higher interest rates or even rejection of your loan application.</p>
+
+    <p class="loan-desc">It is always advisable to check your credit score before applying for a business loan to ensure better borrowing terms.</p>
+
+    <!-- <p class="loan-desc">Always <strong>check your credit score</strong> before applying for a business loan to improve your chances of approval and get better interest rates.</p> -->
+
+    <h3 class="loan-subtitle">2. Credit history:</h3>
+    <p class="loan-desc">Having a long and positive credit history can help you secure a business loan at lower interest rates.</p>
+
+    <p class="loan-desc">Lenders review your past financial transactions and credit behavior to assess your creditworthiness. If your credit record is strong and consistent over time, banks and financial institutions are more likely to view you as a reliable borrower, which often results in more favorable interest rates.</p>
+
+    <p class="loan-desc">On the other hand, if your credit history is poor or shows inconsistencies, lenders may consider you a higher-risk customer, leading to higher interest rates on your loan.</p>
+
+    <h3 class="loan-subtitle">3. Loan amount:</h3>
+    <p class="loan-desc">Typically, larger business loans come with lower interest rates compared to smaller loans.</p>
+    <p class="loan-desc">Therefore, taking a sufficiently sized loan to cover your business needs can be more cost-effective, as interest rates often vary based on the loan amount.</p>
+    <p class="loan-desc">Before applying, make sure to carefully calculate all your business requirements, including expenses for labor, equipment, inventory, and other operational costs, to determine the optimal loan amount.</p>
+
+
+    <h3 class="loan-subtitle">4. Relationship with lender:</h3>
+    <p class="loan-desc">If you maintain a good relationship with your lender and are an existing customer, you may be able to negotiate a lower interest rate on your business loan.</p>
+    <p class="loan-desc">A strong, long-term relationship with the bank can help reduce borrowing costs, as many lenders are willing to offer better rates to reliable and loyal customers.</p>
+    
+
+
+
+              <div class="loan-card">
+        <h5>Types of Business Loan</h5>
+        <!-- <p><strong>Unsecured business loans</strong> are loans provided without requiring any collateral from the borrower</p> -->
+      </div>
+    <h3 class="loan-subtitle">1. Term Loan</h3>
+    <p class="loan-desc">Term loans are available in different types, including short-term loans, long-term loans, and other small business loan options.</p>
+    <p class="loan-desc">The loan amount depends on the applicant’s profile and business needs and is typically repaid over 12 months to 5 years through Equated Monthly Installments (EMIs).</p>
+    <p class="loan-desc">Term loans are generally categorized into two types: secured and unsecured business loans.</p>
+    <p class="loan-desc">Secured loans require the borrower to provide collateral to the lender, whereas unsecured loans do not require any collateral.</p>
+
+        <h3 class="loan-subtitle">2. Working Capital Loan</h3>
+    <p class="loan-desc">Working capital loans are designed to help businesses manage their day-to-day operational needs and maintain smooth cash flow.</p>
+    <p class="loan-desc">These loans can also be used for purposes such as business expansion, purchasing equipment or machinery, buying raw materials or goods, paying salaries or rent, increasing inventory, and other operational expenses.</p>
+    <p class="loan-desc">Typically, lenders offer repayment tenures of up to 12 months, though the duration may be extended depending on the business requirements and the lender’s discretion.</p>
+
+        <h3 class="loan-subtitle">3. Bill/Invoice Discounting</h3>
+    <p class="loan-desc">Invoice discounting is a financial service provided by banks and NBFCs to help businesses manage their working capital.</p>
+    <p class="loan-desc">Also known as bill discounting, it allows sellers who provide goods on credit to receive immediate funds by selling their invoices to a financial institution at a discounted rate.</p>
+    <p class="loan-desc">In this process, the financial institution advances a portion of the invoice amount to the seller, while the buyer pays the full invoice amount to the institution at a later date.</p>
+    <p class="loan-desc">The invoices used in this process are generally referred to as <strong>Bills of Exchange</strong>, and payment can sometimes be facilitated through a letter of credit, giving the buyer the option to purchase goods from the seller.</p>
+
+        <h3 class="loan-subtitle">4. Letter of Credit (LC)</h3>
+    <p class="loan-desc">A Letter of Credit (LC) is a financial instrument commonly used in international trade, where a bank provides a payment guarantee to businesses involved in importing and exporting goods.</p>
+    <p class="loan-desc">When companies engage with unfamiliar overseas suppliers, they need assurance that payment will be made once the goods are delivered.</p>
+    <p class="loan-desc">A Letter of Credit serves this purpose by assuring exporters or suppliers that they will receive payment, thereby facilitating secure and trustworthy international transactions.</p>
+    
+
+        <h3 class="loan-subtitle">5. Point-of-Sale (POS) Loan / Merchant Cash Advance</h3>
+    <p class="loan-desc">A Point of Sale (POS) loan is a type of credit facility that allows merchants to provide financing to their customers at the time of purchase.</p>
+    <p class="loan-desc">This type of loan is available to business owners, enterprises, MSMEs, entrepreneurs, and retailers, helping them either start a new business or manage existing operations.</p>
+    <p class="loan-desc">Also known as a Merchant Cash Advance, the loan amount is typically determined based on the business volume generated through POS terminals, providing flexible funding according to sales performance.</p>
+
+        <h3 class="loan-subtitle">6. Overdraft (OD)</h3>
+    <p class="loan-desc">An overdraft allows an account holder to withdraw money from their current or savings account even if the balance is zero or insufficient.</p>
+    <p class="loan-desc">Interest is charged at a pre-agreed rate when the overdrawn amount remains within the limits set by the bank.</p>
+    <p class="loan-desc">Importantly, interest is applied only on the amount actually used, not on the total sanctioned limit.</p>
+
+
+
+
+      <!-- Business Loan Documents Section -->
+<section class="business-docs">
+  <div class="docs-container">
+    <h2 class="docs-title">Documents Required For Business Loan</h2>
+    <ol class="docs-list">
+      <li>Signed Application Form</li>
+      <li>Identity Proof (PAN)</li>
+      <li>Residential Address Proof</li>
+      <li>Last 3 years ITR (self & business), profit & loss account, balance sheets certified/audited by a CA</li>
+      <li>Last 12 months bank account statement (self & business)</li>
+      <li>Certificate and Proof of Business Existence</li>
+      <li>Business Profile</li>
+      <li>Office address – ownership/lease/rent agreement/utility bill</li>
+    </ol>
+
+    <div class="docs-table">
+      <div class="table-header">
+        <div class="table-cell">Document Type</div>
+        <div class="table-cell">Individuals</div>
+        <div class="table-cell">Firms / Partnerships</div>
+      </div>
+
+      <div class="table-row">
+        <div class="table-cell table-label">Identity Proof</div>
+        <div class="table-cell">
+          PAN Card, Passport, Driving License, Aadhaar Card, Voter ID, Govt Issued ID
+        </div>
+        <div class="table-cell">
+          PAN, Sales Tax / Excise / VAT / Service Tax Registration, Partnership Deed, Trade License,
+          Certificate of Practice, Registration Certificate (RBI, SEBI)
+        </div>
+      </div>
+
+      <div class="table-row">
+        <div class="table-cell table-label">Certificate & Proof of Business Existence</div>
+        <div class="table-cell">
+          PAN Card, Registration Certificate, Trade License, GST Certificate
+        </div>
+        <div class="table-cell">
+          PAN, Sales Tax / Excise / VAT / Service Tax Registration, Partnership Deed, Trade License,
+          Certificate of Practice, Registration Certificate (RBI, SEBI)
+        </div>
+      </div>
+
+      <div class="table-row">
+        <div class="table-cell table-label">Address Proof</div>
+        <div class="table-cell">
+          Passport, Driving License, Election ID Card, Electricity / Telephone / Mobile Bill,
+          Bank Statement (within last 3 months)
+        </div>
+        <div class="table-cell">
+          Bank Statement, Utility Bill, Registry Copy, Lease or Rent Agreement, TAN Allotment
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* --------- Section Styling --------- */
+/* .business-docs {
+  background: #f8f9fc;
+  padding: 30px 15px;
+} */
+
+.docs-container {
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px 25px;
+}
+
+.docs-title {
+  font-size: 1.8rem;
+  color: #023e8a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.docs-list {
+  padding-left: 20px;
+  margin-bottom: 25px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --------- Table Styling --------- */
+.docs-table {
+  display: grid;
+  gap: 10px;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #eaf2fc;
+  border-radius: 8px;
+}
+
+.table-header {
+  font-weight: 600;
+  background: #0077b6;
+  color: white;
+}
+
+.table-row {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.table-cell {
+  padding: 12px;
+  font-size: 0.95rem;
+  border-right: 1px solid #ddd;
+}
+
+.table-cell:last-child {
+  border-right: none;
+}
+
+.table-label {
+  font-weight: 600;
+  background: #f1f5fb;
+  border-right: 1px solid #ddd;
+}
+
+/* --------- Responsive Design --------- */
+@media (max-width: 768px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .table-header .table-cell {
+    text-align: center;
+  }
+
+  .table-row .table-cell {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .table-row .table-cell:last-child {
+    border-bottom: none;
+  }
+
+  .table-label {
+    background: #eaf2fc;
+  }
+}
+</style>
+
+              <div class="loan-card">
+        <h5>Frequently asked Questions</h5>
+      </div>
+    <h3 class="loan-subtitle">Q. What is a good credit score to get an instant business loan?</h3>
+    <p class="loan-desc"><strong>Ans.</strong> A credit score of 750 or above is generally considered good by financial institutions.
+The maximum credit score is 900, and the closer your score is to this number, the higher your chances of quick approval and better interest rates.</p>
+  
+        <h3 class="loan-subtitle">Q. How do I choose the ideal repayment tenure for a business loan?</h3>
+    <p class="loan-desc"><strong>Ans.</strong> For short-term business loans, the repayment tenure typically should not exceed 12 months.
+However, for larger loan amounts, you may opt for a tenure of up to 5 years depending on your business requirements and cash flow.</p>
+ 
+        <h3 class="loan-subtitle">Q. What is the impact of GST on business loans for new businesses?</h3>
+    <p class="loan-desc"><strong>Ans.</strong> GST payment history plays an important role in loan approval.
+Higher GST payments usually indicate a larger business volume, which increases the lender’s confidence in your repayment ability.</p>
+ 
+        <h3 class="loan-subtitle">Q. What is the minimum turnover requirement to get a business loan?</h3>
+    <p class="loan-desc"><strong>Ans.</strong> The minimum annual turnover requirement is set by individual lenders and may vary from bank to bank.
+It’s important to check the specific eligibility criteria with your preferred lender</p>
+       
+
+        <h3 class="loan-subtitle">Q. What are pre-closure and part-prepayment charges in business loans?</h3>
+    <p class="loan-desc"><strong>Ans.</strong> Pre-closure and part-prepayment charges differ from lender to lender.
+Some banks may not charge anything, while others may charge up to 5% of the outstanding loan amount.
+Always confirm the charges with your lender before proceeding.</p>
+    
+        <h3 class="loan-subtitle">Q. What are the government loan schemes available for businesses in India?</h3>
+    <p class="loan-desc"><strong>Ans.</strong> Popular government-backed schemes include: </p>
+        <ul>
+        <li>‣ MUDRA Yojana (PMMY)</li>
+        <li>‣ SIDBI Loan</li>
+        <li>‣ CGTMSE</li>
+        <li>‣ PMEGP</li>
+        <li>‣ Stand-Up India</li>
+        <li>‣ Start-Up India</li>
+        <li>‣ NSIC Schemes</li>
+      </ul>
+      <p class="loan-desc">These initiatives aim to support MSMEs, startups, and entrepreneurs by providing easier access to credit.</p>
+    
+       <div class="loan-card">
+        <h5>Business Loan News – December 2022</h5>
+      </div>
+    <h3 class="loan-subtitle">2022-11-02: Karnataka Bank Reports Strong Q2 Results</h3>
+    <p class="loan-desc">Karnataka Bank posted a net profit of <strong>₹411.63 crores</strong> in Q2 of FY 2022–23, a remarkable jump from <strong>₹125.61 crores</strong> in the same quarter last year - reflecting a <strong>227.70% growth</strong> in profit.</p>
+  
+        <h3 class="loan-subtitle">2022-10-18: SBI Revises Charges for Credit Card EMI & Rent Payments</h3>
+    <p class="loan-desc">State Bank of India (SBI) has announced revised charges for its credit card customers, effective <strong>November 15, 2022:</strong></p>
+      <p class="loan-desc"><strong>• Processing fee on merchant EMI transactions: </strong>Increased to ₹199 + applicable taxes (earlier ₹99 + taxes).</p>
+      <p class="loan-desc"><strong>• Processing fee on rent payments: Set at ₹99 + applicable taxes.</strong><br>This move is expected to impact customers who frequently use EMI or rent payment options via SBI credit cards.</p>
+      
+
+        <h3 class="loan-subtitle">2022-10-18: SBI Launches Digital Banking Unit in Goa</h3>
+    <p class="loan-desc">As part of the Government of India’s initiative, SBI has inaugurated a <strong>Digital Banking Unit (DBU)</strong> in Goa.
+This facility will enable customers to access <strong>banking products and services 24×7</strong>, ensuring that the benefits of digital banking reach every corner of the country.</p>
+ 
+  </div>
+</section>
+
+<style>
+/* ---------- General Styling ---------- */
+.loan-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- Tabs ---------- */
+.loan-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.loan-tab {
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 2px solid #0077b6;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #0077b6;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.loan-tab:hover {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.active-tab {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+/* ---------- Content Styling ---------- */
+.loan-details {
+  padding: 10px 15px;
+}
+
+.loan-title {
+  font-size: 1.8rem;
+  color: #023e8a;
+  margin-bottom: 10px;
+}
+
+.loan-subtitle {
+  font-size: 1.2rem;
+  margin: 15px 0 5px;
+  color: #03045e;
+}
+
+.loan-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.loan-benefits {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.loan-benefits li {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #0077b6;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  /* .loan-section {
+    margin: 20px;
+    padding: 15px;
+  } */
+
+  .loan-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .loan-header {
+    justify-content: flex-start;
+    gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .loan-tab {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loan-tab {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+  }
+
+  .loan-title {
+    font-size: 1.3rem;
+  }
+
+  .loan-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* ======================
+   Popup Overlay & Form
+====================== */
+.loan-popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -261,12 +1067,11 @@
   z-index: 1000;
 }
 
-.popup-overlay:target {
+.loan-popup-overlay:target {
   display: flex;
 }
 
-/* Popup Box */
-.popup {
+.loan-popup-box {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -274,11 +1079,10 @@
   width: 90%;
   position: relative;
   box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
-  animation: fadeIn 0.3s ease-in-out;
+  animation: loanFadeIn 0.3s ease-in-out;
 }
 
-/* Close Button */
-.close-btn {
+.loan-close-btn {
   position: absolute;
   top: 8px;
   right: 12px;
@@ -288,21 +1092,20 @@
   font-weight: bold;
 }
 
-/* Form Styles */
-.loan-form {
+.business-loan-form {
   background: #fff;
   padding: 0;
   border-radius: 8px;
   width: 100%;
 }
 
-h2 {
+.loan-title {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
 }
 
-.input-group {
+.loan-input-group {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -311,18 +1114,17 @@ h2 {
   overflow: hidden;
 }
 
-.icon {
+.loan-icon {
   background-color: #00a0e3;
   color: white;
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-width: 40px;
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.input-group input {
+.loan-input-group input {
   flex: 1;
   border: none;
   outline: none;
@@ -330,7 +1132,7 @@ h2 {
   font-size: 14px;
 }
 
-.checkbox {
+.loan-checkbox {
   display: flex;
   align-items: flex-start;
   margin: 10px 0 15px;
@@ -338,12 +1140,12 @@ h2 {
   color: #333;
 }
 
-.checkbox input {
+.loan-checkbox input {
   margin-right: 8px;
   margin-top: 3px;
 }
 
-.btn {
+.loan-btn {
   display: block;
   width: 100%;
   background-color: #024a78;
@@ -355,158 +1157,153 @@ h2 {
   border-radius: 4px;
 }
 
-.btn:hover {
+.loan-btn:hover {
   background-color: #0086c9;
 }
 
-/* Animation */
-@keyframes fadeIn {
+@keyframes loanFadeIn {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
-</style>
 
-          </div>
-        </div>
-        <!-- /col -->
-        <!-- col -->
-        <div class="col-lg-7 d-lg-block">
-          <div class="hero-1-thumb-15 wow fadeInUp animated" data-wow-delay="0.4s">
-            <img class="img-fluid wow fadeInRight animated" src="images/banner/business-banner1.jpg" alt="hero-1" />
-          </div>
-        </div>
-        <!-- /col -->
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /Hero -->
+/* ======================
+   Loan Info Section
+====================== */
+.loan-info-section {
+  background: #f8f9fc;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+  font-family: Arial, sans-serif;
+}
 
+.loan-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
 
-<section class="loan-info-section">
-  <div class="loan-tabs">
-    <a href="index.html" class="tab-btn active">Home Loan</a>
-    <a href="loan-against-property.html" class="tab-btn">Loan Against Property</a>
-    <a href="business-loan.html" class="tab-btn">Business Loan</a>
-    <a href="personal-loan.html" class="tab-btn">Personal Loan</a>
-    <a href="#" class="tab-btn">Gold Loan</a>
-  </div>
+.tab-btn {
+  background: #ffffff;
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 120px;
+}
 
-  <div class="loan-content">
-    <h3>Business Loan</h3>
-    <p>
-      A business loan is one type of a loan that is applied for by people who aim to establish, expand
-      or buy equipment for their businesses. Entrepreneurs who look for capital to begin their
-      businesses also apply for business loans. These loans are perfect for small businesses in India.
-    </p>
-    <p>There are two types of small business loans in India:</p>
+.tab-btn:hover {
+  background: #007bff;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+}
 
-    <h4>1. Secured Business Loans:</h4>
-    <p>
-      These loans are taken against some type of personal guarantee or any valuable asset as collateral.
-      A secured business loan is when the individual provides collateral in the form of land, machinery,
-      a house, etc., as security for the loan amount.
-      <strong>This has the added benefit of a lower rate of interest.</strong>
-    </p>
+.tab-btn.active {
+  background: #007bff;
+  color: #fff;
+}
 
-    <h4>2. Unsecured Business Loans:</h4>
-    <p>
-      These loans are given without any collateral. The interest rates are usually higher because of the
-      risk factor involved.
-    </p>
+.loan-content h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-    <h4>Benefits of Business Loan:</h4>
-    <ul>
-      <li>Flexible Tenures</li>
-      <li>Quick Approval</li>
-      <li>Competitive Interest Rates</li>
-    </ul>
-  </div>
-</section>
+.loan-content h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #007bff;
+}
 
-<style>
+.loan-content p {
+  color: #444;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.loan-content ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.loan-content ul li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* ======================
+   Responsive Design
+====================== */
+@media (max-width: 768px) {
+  .loan-popup-box {
+    transform: translateY(0);
+    max-width: 95%;
+    width: 95%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
   .loan-info-section {
-    background: #f8f9fc;
-    padding: 40px;
-    margin-top: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
-    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-top: 30px;
   }
 
   .loan-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
   }
 
   .tab-btn {
-    background: #ffffff;
-    border: 2px solid #007bff;
-    color: #007bff;
-    font-weight: bold;
-    padding: 10px 18px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .tab-btn:hover {
-    background: #007bff;
-    color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,123,255,0.2);
-  }
-
-  .tab-btn.active {
-    background: #007bff;
-    color: #fff;
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
   }
 
   .loan-content h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 18px;
   }
 
   .loan-content h4 {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #007bff;
+    font-size: 16px;
   }
 
-  .loan-content p {
-    color: #444;
-    line-height: 1.6;
-    margin: 8px 0;
-  }
-
-  .loan-content ul {
-    margin-top: 10px;
-    padding-left: 20px;
-  }
-
+  .loan-content p, 
   .loan-content ul li {
-    margin-bottom: 5px;
-    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
   }
+}
+
+@media (max-width: 480px) {
+  .loan-popup-box {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .loan-info-section {
+    padding: 15px;
+  }
+
+  .tab-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .loan-content h3 {
+    font-size: 16px;
+  }
+}
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -542,11 +1339,11 @@ h2 {
               <h3 class="footer-title">Company</h3>
               <div class="footer-link">
                 <ul>
-                  <li><a href="">About Us</a></li>
+                  <li><a href="about-us-1.html">About Us</a></li>
                   <li><a href="">Loan Calculator</a></li>
                   <li><a href="">Blog</a></li>
-                  <li><a href="">Careers</a></li>
-                  <li><a href="">Contact Us</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -557,11 +1354,11 @@ h2 {
               <h3 class="footer-title">Loan Services</h3>
               <div class="footer-link">
                 <ul>
-                  <li><a href="">Home Loans</a></li>
-                  <li><a href="">Loan Against Property</a></li>
-                  <li><a href="">Business Loans</a></li>
-                  <li><a href="">Personal Loans</a></li>
-                  <li><a href="">Private Equity</a></li>
+                  <li><a href="index.html">Home Loans</a></li>
+                  <li><a href="loan-against-property.html">Loan Against Property</a></li>
+                  <li><a href="business-loan.html">Business Loans</a></li>
+                  <li><a href="personal-loan.html">Personal Loans</a></li>
+                  <li><a href="private-equity.html">Private Equity</a></li>
                 </ul>
               </div>
               <div></div>
@@ -655,7 +1452,7 @@ h2 {
         </div>
       </div>
     </div> -->
-  <div class="social-panel">
+  <!-- <div class="social-panel">
     <div class="social-icons">
       <ul class="social">
         <li>
@@ -673,7 +1470,7 @@ h2 {
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
   <!-- JS -->
 
   <!-- Vendor Js -->

@@ -5463,7 +5463,7 @@ textarea:focus {
 .team-block .lower-content h3 a {
   position: relative;
   display: inline-block;
-  color: #565972;
+  color: #ffffff;
 }
 
 .team-block .lower-content h3 a:hover {
@@ -5475,7 +5475,7 @@ textarea:focus {
   display: block;
   font-size: 18px;
   font-family: "Nunito", sans-serif;
-  color: #7379a0;
+  color: #ffffff;
 }
 
 .team-block .image-holder {

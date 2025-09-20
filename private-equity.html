@@ -191,15 +191,16 @@
                 #Bank Loan
               </h5> -->
             <h1 class="title wow fadeInUp animated" data-wow-delay="0.4s">
-              Loan Eligibility Calculator
+              Private Equity
             </h1>
+            <h4>Your Trusted Partner for Private Equity Investments</h4>
             <!-- <p class="wow fadeInUp animated" data-wow-delay="0.6s">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p> -->
-            <!-- <div class="hero-1-button-group">
+            <div class="hero-1-button-group">
               <a href="#" class="btn theme-btn-1 wow fadeInUp animated" data-wow-delay="0.8s">
                 Get Started <i class="uil uil-angle-right-b ml-2 mb-2"></i></a>
-            </div> -->
+            </div>
           </div>
         </div>
         <!-- /col -->
@@ -218,135 +219,169 @@
   <!-- /Hero -->
 
 
+
+<!-- Private Equity Section -->
+<section class="private-equity-section">
+  <div class="container">
+    <div class="pe-content">
+      <h2>Private Equity Services</h2>
+      <p>
+        SP Avenue Finserve Pvt Ltd provides expert Private Equity solutions to help businesses and startups
+        secure funding, manage investments, and grow sustainably. Our experienced team ensures tailored
+        financial advisory to meet your investment needs.
+      </p>
+    </div>
+
+    <div class="pe-form-container">
+      <h3>Get in Touch for Private Equity Consultation</h3>
+      <form class="pe-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required />
+        </div>
+
+        <div class="form-group">
+          <label for="company">Company Name</label>
+          <input type="text" id="company" placeholder="Enter your company name" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Tell us more about your requirement"></textarea>
+        </div>
+
+        <button type="submit" class="pe-submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Private Equity CSS -->
 <style>
-    .center-wrapper {
-      background-color: #f6f9fc;
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      min-height: 100vh; /* Full screen height */
-    }
+/* Private Equity Section Styles */
+.private-equity-section {
+  padding: 80px 15px;
+  background-color: #f7f9fc;
+}
 
-    .calculator-section {
-      background: #ffffff;
-      padding: 30px 40px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-      width: 600px;
-    }
+.private-equity-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    .calculator-section h2 {
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 22px;
-      color: #333;
-    }
+.pe-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-    .form-group {
-      margin-bottom: 15px;
-    }
+.pe-content h2 {
+  font-size: 36px;
+  color: #004d99;
+  margin-bottom: 15px;
+}
 
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 14px;
-      font-weight: bold;
-      color: #444;
-    }
+.pe-content p {
+  font-size: 16px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 
-    input {
-      width: 100%;
-      padding: 10px;
-      font-size: 14px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      outline: none;
-      box-sizing: border-box;
-    }
+/* Form Styles */
+.pe-form-container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-    input:focus {
-      border-color: #007bff;
-      box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
-    }
+.pe-form-container h3 {
+  font-size: 28px;
+  color: #004d99;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    .form-actions {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
+.pe-form .form-group {
+  margin-bottom: 20px;
+}
 
-    .btn {
-      padding: 10px 20px;
-      font-size: 14px;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
+.pe-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
 
-    .btn-primary {
-      background-color: #007bff;
-      color: white;
-    }
+.pe-form input,
+.pe-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
 
-    .btn-primary:hover {
-      background-color: #0056b3;
-    }
+.pe-form textarea {
+  resize: vertical;
+}
 
-    .btn-reset {
-      background-color: transparent;
-      color: #007bff;
-      text-decoration: underline;
-    }
+.pe-submit-btn {
+  display: inline-block;
+  background-color: #004d99;
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
 
-    .btn-reset:hover {
-      color: #0056b3;
-    }
+.pe-submit-btn:hover {
+  background-color: #003366;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .pe-content h2 {
+    font-size: 28px;
+  }
+  .pe-form-container {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pe-content h2 {
+    font-size: 24px;
+  }
+  .pe-content p {
+    font-size: 14px;
+  }
+  .pe-form-container {
+    padding: 20px 15px;
+  }
+}
 </style>
 
 
-<div class="center-wrapper">
-    <section class="calculator-section">
-      <h2>Loan Eligibility Calculator</h2>
-
-      <form>
-        <div class="form-group">
-          <label for="income">Net income per month</label>
-          <input type="text" id="income" placeholder="₹  Excluding LTA and Medical allowances">
-        </div>
-
-        <div class="form-group">
-          <label for="other-income">Other Year Income</label>
-          <input type="text" id="other-income" placeholder="₹  Home Rent, Incentives, Bonus etc">
-        </div>
-
-        <div class="form-group">
-          <label for="loan-emi">Existing Loan EMI</label>
-          <input type="text" id="loan-emi" placeholder="₹  (per month)">
-        </div>
-
-        <div class="form-group">
-          <label for="loan-tenure">Loan Tenure</label>
-          <input type="text" id="loan-tenure" placeholder="(in years)">
-        </div>
-
-        <div class="form-group">
-          <label for="interest">Rate of Interest</label>
-          <input type="text" id="interest" placeholder="6.40%">
-        </div>
-
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Check Eligibility</button>
-          <button type="reset" class="btn btn-reset">Reset All</button>
-        </div>
-      </form>
-    </section>
-  </div>
-
-
-  
-  
 
 
     <!-- Footer -->

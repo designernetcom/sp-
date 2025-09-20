@@ -66,19 +66,19 @@
                 <a href="index.html" class="nav-link active">Loan <i class="las la-angle-down"></i></a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link active" href="">Home Loan</a>
+                    <a class="nav-link active" href="index.html">Home Loan</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="loan-against-property.html"> Loan Against Property</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Business Loans</a>
+                    <a class="nav-link" href="business-loan.html">Business Loans</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Personal Loans</a>
+                    <a class="nav-link" href="personal-loan.html">Personal Loans</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Private Equity</a>
+                    <a class="nav-link" href="private-equity.html">Private Equity</a>
                   </li>
                 </ul>
               </li>
@@ -143,13 +143,13 @@
     <div class="others-option-for-responsive">
       <!-- Container -->
       <div class="container">
-        <div class="dot-menu">
+        <!-- <div class="dot-menu">
           <div class="inner">
             <div class="circle circle-one"></div>
             <div class="circle circle-two"></div>
             <div class="circle circle-three"></div>
           </div>
-        </div>
+        </div> -->
         <!-- Container -->
         <div class="container">
           <div class="option-inner">
@@ -195,8 +195,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p> -->
             <div class="hero-1-button-group">
-              <a href="#" class="btn theme-btn-1 wow fadeInUp animated" data-wow-delay="0.8s">
-                Get Started <i class="uil uil-angle-right-b ml-2 mb-2"></i></a>
+              <a href="#home-loan-popup" class="btn theme-btn-1 wow fadeInUp animated" data-wow-delay="0.8s">
+                Apply <i class="uil uil-angle-right-b ml-2 mb-2"></i></a>
             </div>
           </div>
         </div>
@@ -214,6 +214,176 @@
     <!-- /container -->
   </div>
   <!-- /Hero -->
+
+
+
+
+<style>
+  /* ======================
+   Home Loan Popup Overlay & Form
+====================== */
+.home-loan-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.home-loan-popup-overlay:target {
+  display: flex;
+}
+
+.home-loan-popup-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 420px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+  animation: homeLoanFadeIn 0.3s ease-in-out;
+}
+
+.home-loan-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 28px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-loan-form {
+  background: #fff;
+  padding: 0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.home-loan-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.home-loan-input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.home-loan-icon {
+  background-color: #00a0e3;
+  color: white;
+  padding: 10px;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-loan-input-group input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.home-loan-checkbox {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0 15px;
+  font-size: 13px;
+  color: #333;
+}
+
+.home-loan-checkbox input {
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.home-loan-btn {
+  display: block;
+  width: 100%;
+  background-color: #024a78;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.home-loan-btn:hover {
+  background-color: #0086c9;
+}
+
+@keyframes homeLoanFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+</style>
+
+<!-- Home Loan Popup Modal -->
+<div id="home-loan-popup" class="home-loan-popup-overlay">
+  <div class="home-loan-popup-box">
+    <a href="#" class="home-loan-close-btn">&times;</a>
+
+    <form class="home-loan-form">
+      <h3 class="home-loan-title">Apply For Home Loan</h3>
+
+      <div class="home-loan-input-group">
+        <div class="home-loan-icon">👤</div>
+        <input type="text" placeholder="Full Name" required>
+      </div>
+
+      <div class="home-loan-input-group">
+        <div class="home-loan-icon">+91</div>
+        <input type="tel" placeholder="Mobile Number" required>
+      </div>
+
+      <div class="home-loan-input-group">
+        <div class="home-loan-icon">📍</div>
+        <input type="text" placeholder="City" required>
+      </div>
+
+      <div class="home-loan-input-group">
+        <div class="home-loan-icon">₹</div>
+        <input type="number" placeholder="Monthly Income" required>
+      </div>
+
+      <div class="home-loan-input-group">
+        <div class="home-loan-icon">₹</div>
+        <input type="number" placeholder="Loan Amount" required>
+      </div>
+
+      <div class="home-loan-checkbox">
+        <input type="checkbox" required>
+        <label>I authorize Apnarupee and its partners to contact me. This overrides my number being in the NDNC registry.</label>
+      </div>
+
+      <button type="submit" class="home-loan-btn">Apply</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
 
   <!-- Featured box -->
   <div class="featured-boxes-area">
@@ -1036,7 +1206,7 @@
       <!-- row -->
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-          <div class="team-block-3">
+          <div class="team-block-3 shadow">
             <div class="image-holder">
               <figure class="image-box">
                 <img src="images/team/team-2.png" alt="" />
@@ -1052,15 +1222,41 @@
               </ul>
             </div>
             <div class="lower-content">
-              <h3><a href="#">Sandip Patil </a></h3>
+
+              <div class="background-box">
+                              <h3><a href="#">Sandip Patil </a></h3>
               <span class="designation">Director </span>
+  <span class="designation">
+    Professional with over 7 years of experience in banking and finance, and more than 3 years in mineral exporting, active since April 2022.
+  </span>
+</div>
+<style>
+.background-box {
+      height: 225px;
+    background-color: #00a0e3;
+    /* border-left: 4px solid #024a78; */
+    padding: 15px 20px;
+    /* border-radius: 8px; */
+    color: white;
+    max-width: 700px;
+    margin: -47px auto;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  }
+
+.background-box .designation {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+</style>
             </div>
           </div>
         </div>
         <!-- /col -->
         <!-- col -->
         <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-          <div class="team-block-3">
+          <div class="team-block-3 shadow">
             <div class="image-holder">
               <figure class="image-box">
                 <img src="images/team/team-3.png" alt="" />
@@ -1076,16 +1272,19 @@
               </ul>
             </div>
             <div class="lower-content">
+              <div class="background-box">
               <h3><a href="#">Tanuja Patil</a></h3>
               <span class="designation">Director</span>
+              <span class="designation">Experienced in stock market, financial marketing & teaching.</span>
               <p></p>
             </div>
+          </div>
           </div>
         </div>
         <!-- /col -->
         <!-- col -->
         <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-          <div class="team-block-3">
+          <div class="team-block-3 shadow">
             <div class="image-holder">
               <figure class="image-box">
                 <img src="images/team/team-4.png" alt="" />
@@ -1101,15 +1300,18 @@
               </ul>
             </div>
             <div class="lower-content">
+              <div class="background-box">
               <h3><a href="#">Sourabh Singh</a></h3>
               <span class="designation">Marketing head</span>
+              <span class="designation">5–6 years of stock market advisory experience with Axis Securities, Goodwill Broking & Mandir Securities Pvt. Ltd.</span>
             </div>
+          </div>
           </div>
         </div>
         <!-- /col -->
         <!-- col -->
         <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-          <div class="team-block-3">
+          <div class="team-block-3 shadow">
             <div class="image-holder">
               <figure class="image-box">
                 <img src="images/team/team-5.png" alt="" />
@@ -1125,9 +1327,12 @@
               </ul>
             </div>
             <div class="lower-content">
+              <div class="background-box">
               <h3><a href="#">Priya Kanojiya</a></h3>
               <span class="designation">HR</span>
+              <span class="designation">5–6 years of HR, Marketing & stock market experience at Axis Securities, Goodwill Broking & Choice Broking.</span>
             </div>
+          </div>
           </div>
         </div>
         <!-- /col -->
@@ -1141,23 +1346,22 @@
   </div>
 
   <!-- Cta -->
-  <div class="cta-area">
-    <!-- Container -->
+  <!-- <div class="cta-area">
+
     <div class="container">
-      <!-- row -->
+
       <div class="row align-items-center">
-        <!-- col -->
+
         <div class="col-lg-12">
           <div class="get-start-box">
-            <!-- col -->
+
             <div class="col-lg-8">
               <div class="section-heading">
                 <h5 class="section__meta text-white">#get in touch</h5>
                 <h2 class="section__title">Ready to get started ?</h2>
               </div>
             </div>
-            <!-- /col -->
-            <!-- col -->
+
             <div class="col-lg-4">
               <div class="button-shared text-end">
                 <a class="btn cta-btn" href="">
@@ -1165,15 +1369,15 @@
                 </a>
               </div>
             </div>
-            <!-- /col -->
+
           </div>
         </div>
-        <!-- /col -->
+
       </div>
-      <!-- /row -->
+
     </div>
-    <!-- /Container -->
-  </div>
+
+  </div> -->
   <!-- /Cta -->
 
   <!-- Footer -->
@@ -1207,11 +1411,11 @@
               <h3 class="footer-title">Company</h3>
               <div class="footer-link">
                 <ul>
-                  <li><a href="">About Us</a></li>
+                  <li><a href="about-us-1.html">About Us</a></li>
                   <li><a href="">Loan Calculator</a></li>
                   <li><a href="">Blog</a></li>
-                  <li><a href="">Careers</a></li>
-                  <li><a href="">Contact Us</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -1222,11 +1426,11 @@
               <h3 class="footer-title">Loan Services</h3>
               <div class="footer-link">
                 <ul>
-                  <li><a href="">Home Loans</a></li>
-                  <li><a href="">Loan Against Property</a></li>
-                  <li><a href="">Business Loans</a></li>
-                  <li><a href="">Personal Loans</a></li>
-                  <li><a href="">Private Equity</a></li>
+                  <li><a href="index.html">Home Loans</a></li>
+                  <li><a href="loan-against-property.html">Loan Against Property</a></li>
+                  <li><a href="business-loan.html">Business Loans</a></li>
+                  <li><a href="personal-loan.html">Personal Loans</a></li>
+                  <li><a href="private-equity.html">Private Equity</a></li>
                 </ul>
               </div>
               <div></div>
@@ -1320,7 +1524,7 @@
         </div>
       </div>
     </div> -->
-  <div class="social-panel">
+  <!-- <div class="social-panel">
     <div class="social-icons">
       <ul class="social">
         <li>
@@ -1338,7 +1542,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
   <!-- JS -->
 
   <!-- Vendor Js -->

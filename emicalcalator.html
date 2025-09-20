@@ -72,13 +72,13 @@
                     <a class="nav-link" href="loan-against-property.html"> Loan Against Property</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Business Loans</a>
+                    <a class="nav-link" href="business-loan.html">Business Loans</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Personal Loans</a>
+                    <a class="nav-link" href="personal-loan.html">Personal Loans</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Private Equity</a>
+                    <a class="nav-link" href="private-equity.html">Private Equity</a>
                   </li>
                 </ul>
               </li>
@@ -143,13 +143,13 @@
     <div class="others-option-for-responsive">
       <!-- Container -->
       <div class="container">
-        <div class="dot-menu">
+        <!-- <div class="dot-menu">
           <div class="inner">
             <div class="circle circle-one"></div>
             <div class="circle circle-two"></div>
             <div class="circle circle-three"></div>
           </div>
-        </div>
+        </div> -->
         <!-- Container -->
         <div class="container">
           <div class="option-inner">
@@ -226,7 +226,161 @@
 
 
 
+<style>
+  /* ===== Basic Reset ===== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
 
+  html {
+    height: 100%;
+  }
+
+  /* ===== Wrapper ===== */
+  .emi-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+      background: linear-gradient(to right, #ffffff, #8dbcff);
+  }
+    /* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .emi-wrapper {
+    min-height: 80vh; /* slightly taller for tablet */
+    padding: 20px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 767px) {
+  .emi-wrapper {
+    flex-direction: column; /* stack items vertically */
+    justify-content: flex-start; /* align items from top */
+    min-height: 80vh; /* full screen height */
+    padding: 15px 10px;
+  }
+}
+
+  /* ===== Card ===== */
+  .emi-card {
+    background: #fff;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  }
+
+  .emi-card h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+
+  /* ===== Form Fields ===== */
+  .emi-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #333;
+  }
+
+  .emi-form input, .emi-form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  /* ===== Submit Button ===== */
+  .emi-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .emi-form button:hover {
+    background-color: #0056b3;
+  }
+
+  /* ===== Result Placeholder ===== */
+  .emi-result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2ecc71;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .emi-card {
+      padding: 25px 20px;
+    }
+
+    .emi-card h2 {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .emi-card {
+      padding: 20px 15px;
+    }
+
+    .emi-form input, .emi-form select {
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+
+    .emi-form button {
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+</style>
+</head>
+
+<div class="emi-wrapper">
+  <div class="emi-card">
+    <h2>EMI Calculator</h2>
+    <form class="emi-form">
+      <label for="loan-amount">Loan Amount</label>
+      <input type="number" id="loan-amount" placeholder="Enter loan amount">
+
+      <label for="interest-rate">Interest Rate (%)</label>
+      <input type="number" id="interest-rate" placeholder="Enter interest rate">
+
+      <label for="tenure">Tenure (Months)</label>
+      <input type="number" id="tenure" placeholder="Enter tenure in months">
+
+      <label for="loan-type">Loan Type</label>
+      <select id="loan-type">
+        <option>Home Loan</option>
+        <option>Car Loan</option>
+        <option>Personal Loan</option>
+      </select>
+
+      <button type="submit">Calculate EMI</button>
+      <div class="emi-result">
+        EMI: ₹ ______
+      </div>
+    </form>
+  </div>
+</div>
 
 
 
@@ -266,11 +420,11 @@
               <h3 class="footer-title">Company</h3>
               <div class="footer-link">
                 <ul>
-                  <li><a href="">About Us</a></li>
+                  <li><a href="about-us-1.html">About Us</a></li>
                   <li><a href="">Loan Calculator</a></li>
                   <li><a href="">Blog</a></li>
-                  <li><a href="">Careers</a></li>
-                  <li><a href="">Contact Us</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -281,11 +435,11 @@
               <h3 class="footer-title">Loan Services</h3>
               <div class="footer-link">
                 <ul>
-                  <li><a href="">Home Loans</a></li>
-                  <li><a href="">Loan Against Property</a></li>
-                  <li><a href="">Business Loans</a></li>
-                  <li><a href="">Personal Loans</a></li>
-                  <li><a href="">Private Equity</a></li>
+                  <li><a href="index.html">Home Loans</a></li>
+                  <li><a href="loan-against-property.html">Loan Against Property</a></li>
+                  <li><a href="business-loan.html">Business Loans</a></li>
+                  <li><a href="personal-loan.html">Personal Loans</a></li>
+                  <li><a href="private-equity.html">Private Equity</a></li>
                 </ul>
               </div>
               <div></div>
@@ -379,7 +533,7 @@
         </div>
       </div>
     </div> -->
-  <div class="social-panel">
+  <!-- <div class="social-panel">
     <div class="social-icons">
       <ul class="social">
         <li>
@@ -397,7 +551,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
   <!-- JS -->
 
   <!-- Vendor Js -->
